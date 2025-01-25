@@ -4,6 +4,7 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './MagicButton'
 import { FaLocationArrow } from "react-icons/fa6";
 import YourImage from './path/to/your/image.jpg'  // Add your image path
+import Image from 'next/image';
 
 const Hero = () => {
     return (
@@ -51,7 +52,7 @@ const Hero = () => {
 
                     {/* Image on the right */}
                     <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-                        <img
+                        <Image
                             src="/b1.svg"
                             alt="Irsa Abid"
                             className="rounded-full w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 shadow-lg"
