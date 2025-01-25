@@ -54,6 +54,8 @@ const Hero = () => {
                     <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
                         <Image
                             src="/b1.svg"
+                            width={240}
+                            height={240}
                             alt="Irsa Abid"
                             className="rounded-full w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 shadow-lg"
                         />
