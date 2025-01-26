@@ -9,7 +9,11 @@ const nextConfig: NextConfig = {
   },
   images: {
     domains: ["fonts.googleapis.com"],
+    unoptimized: true,
   },
+  output: "export",
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
 };
 
 export default nextConfig;
