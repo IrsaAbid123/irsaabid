@@ -1,7 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import GridGlobe from "./GridGlobe";
 import Lottie from "react-lottie";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
@@ -141,10 +140,6 @@ export const BentoGridItem = ({
                     </div>
                     {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
                     {/* remove mb-2 mt-2 */}
-
-
-                    {/* for the github 3d globe */}
-                    {id === 2 && <GridGlobe />}
 
                     {/* Tech stack list div */}
                     {id === 3 && (
