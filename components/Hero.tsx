@@ -38,7 +38,7 @@ const Hero = () => {
                             className="text-left text-[40px] md:text-5xl lg:text-6xl"
                         />
                         <p className="text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
-                            Experienced Full Stack Developer specializing in building scalable web and mobile applications, with a strong focus on load balancing, user handling, AWS, and DevOps practices.
+                            Specializing in building scalable web and mobile applications, exploring DevOps and AWS to enhance deployment efficiency.
                         </p>
 
                         <a href="#about">
@@ -53,7 +53,7 @@ const Hero = () => {
                     {/* Image on the right */}
                     <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
                         <Image
-                            src="/b1.svg"
+                            src="/pfp.png"
                             width={240}
                             height={240}
                             alt="Irsa Abid"
