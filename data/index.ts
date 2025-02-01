@@ -8,56 +8,19 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "A little about myself",
+    title: "Full Stack Developer",
     description:
-      "I'm Irsa Abid, a Full-Stack Developer with experience in building scalable web and mobile applications. Skilled in React, Node.js, and MongoDB, I specialize in creating efficient solutions that handle real-world challenges. Currently, I’m focused on optimizing user load handling, deploying robust applications, and mastering DevOps practices.",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
+      "Irsa Abid is a Full Stack Developer with expertise in web and mobile app development, specializing in React Native, Next.js, Node.js, and NestJS. With over a year of experience, she has built scalable applications and is skilled in API integration, database management, and deployments. Currently working at Airtective, she is also expanding her knowledge in DevOps and AWS cloud deployments. Passionate about problem-solving and optimization, she aims to enhance deployment experiences for high-performance applications.",
+    className:
+      "lg:col-span-3 md:col-span-6 md:row-span-4 mx-auto bg-red lg:min-h-[60vh]",
+    imgClassName: "w-48 h-48 rounded-full",
+    titleClassName: "mt-4",
     img: "/b1.svg",
     spareImg: "",
   },
-  {
-    id: 2,
-    title: "Optimizing user load and system scalability",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 5,
-    title: "Dedicated to delivering impactful solutions ",
-    description:
-      "Passionate about crafting seamless digital experiences using my skills in React, Node.js, MongoDB, and Firebase.",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 4,
-    title: "Exploring scalable architectures",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-  {
-    id: 3,
-    title: "My tech stacks",
-    description: "",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/grid.svg",
-    spareImg: "/grid.svg",
-  },
+];
+
+export const email = [
   {
     id: 6,
     title: "Do you want to start a project together?",
