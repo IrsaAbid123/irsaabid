@@ -67,20 +67,20 @@ const RecentProjects = () => {
                                             <Image
                                                 src={icon}
                                                 alt="icon5"
-                                                width={24}
-                                                height={24}
+                                                width={35}
+                                                height={35}
                                                 className="p-2"
                                             />
                                         </div>
                                     ))}
                                 </div>
 
-                                <div className="flex justify-center items-center">
+                                {/* <div className="flex justify-center items-center">
                                     <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                                         Check Live Site
                                     </p>
                                     <FaLocationArrow className="ms-3" color="#CBACF9" />
-                                </div>
+                                </div> */}
                             </div>
                         </PinContainer>
                     </div>

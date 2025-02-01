@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
+import Services from "@/components/Services";
+import { AnimatedTestimonials } from "@/components/ui/AnimatedTestimonials";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import Image from "next/image";
@@ -17,6 +19,7 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Experience />
+        <Services />
         <Footer />
       </div>
     </main>
