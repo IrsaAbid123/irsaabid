@@ -1,17 +1,16 @@
-import React from 'react'
-import { AnimatedTestimonials } from './ui/AnimatedTestimonials'
-import { services } from '@/data'
+"use client";
+import React from "react";
+import { StickyScroll } from "./ui/StickyScroll";
+import { content } from "@/data/services";
 
-const Services = () => {
+export function Services() {
     return (
-        <div>
-            <h1 className="heading">
+        <div className="p-20">
+            <h1 className="heading my-20">
                 My{" "}
                 <span className="text-purple">Services</span>
             </h1>
-            <AnimatedTestimonials testimonials={services} />
+            <StickyScroll content={content} />
         </div>
-    )
+    );
 }
-
-export default Services
