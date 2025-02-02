@@ -5,6 +5,20 @@ import Image from "next/image"
 import type React from "react"
 import MagicButton from "../MagicButton"
 import { FaLocationArrow } from "react-icons/fa6"
+import { TypewriterEffect } from "./TypewriterEffect"
+
+const words = [
+    {
+        text: "Full",
+    },
+    {
+        text: "Stack",
+    },
+    {
+        text: "Developer",
+        className: "text-blue-500 dark:text-blue-500",
+    }
+];
 
 export const BentoGrid = ({
     className,
@@ -66,7 +80,7 @@ export const BentoGridItem = ({
             </div>
 
             <div className={cn(titleClassName, "text-center w-full px-10")}>
-                <h2 className="font-sans text-2xl lg:text-3xl font-bold  text-white mb-2">{title}</h2>
+                <TypewriterEffect words={words} className="my-5" />
                 <p className="font-sans text-lg text-gray-300 ">{description}</p>
             </div>
             <a href="#experience" className="">

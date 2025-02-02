@@ -45,7 +45,7 @@ const RecentProjects = () => {
                             </h1>
 
                             <p
-                                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-4"
                                 style={{
                                     color: "#BEC1DD",
                                     margin: "1vh 0",
@@ -67,20 +67,20 @@ const RecentProjects = () => {
                                             <Image
                                                 src={icon}
                                                 alt="icon5"
-                                                width={24}
-                                                height={24}
+                                                width={35}
+                                                height={35}
                                                 className="p-2"
                                             />
                                         </div>
                                     ))}
                                 </div>
 
-                                <div className="flex justify-center items-center">
+                                {/* <div className="flex justify-center items-center">
                                     <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                                         Check Live Site
                                     </p>
                                     <FaLocationArrow className="ms-3" color="#CBACF9" />
-                                </div>
+                                </div> */}
                             </div>
                         </PinContainer>
                     </div>
