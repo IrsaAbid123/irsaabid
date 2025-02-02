@@ -83,7 +83,7 @@ export const BentoGridItem = ({
                 <TypewriterEffect words={words} className="my-5" />
                 <p className="font-sans text-lg text-gray-300 ">{description}</p>
             </div>
-            <a href="#experience" className="">
+            <a href="#tech" className="">
                 <MagicButton
                     title="My teck stacks"
                     icon={<FaLocationArrow />}

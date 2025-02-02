@@ -2,9 +2,12 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './MagicButton'
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaDownload, FaLocationArrow } from "react-icons/fa6";
 import YourImage from './path/to/your/image.jpg'  // Add your image path
 import Image from 'next/image';
+import { BsDownload } from 'react-icons/bs';
+import { FcStart } from 'react-icons/fc';
+import { SiStartrek } from 'react-icons/si';
 
 const Hero = () => {
     return (
@@ -40,14 +43,23 @@ const Hero = () => {
                         <p className="text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
                             Specializing in building scalable web and mobile applications, exploring DevOps and AWS to enhance deployment efficiency.
                         </p>
+                        <div className='flex flex-row gap-5'>
+                            <a href="/irsa-abid-full-stack.pdf" download>
+                                <MagicButton
+                                    title="Download CV"
+                                    icon={<BsDownload />}
+                                    position="right"
+                                />
+                            </a>
 
-                        <a href="#about">
-                            <MagicButton
-                                title="Show my work"
-                                icon={<FaLocationArrow />}
-                                position="right"
-                            />
-                        </a>
+                            <a href="#about">
+                                <MagicButton
+                                    title="Vedio Intro"
+                                    icon={<FcStart />}
+                                    position="right"
+                                />
+                            </a>
+                        </div>
                     </div>
 
                     {/* Image on the right */}

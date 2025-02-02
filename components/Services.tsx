@@ -5,7 +5,7 @@ import { content } from "@/data/services";
 
 export function Services() {
     return (
-        <div className="p-20">
+        <div className="p-20" id="services">
             <h1 className="heading my-20">
                 My{" "}
                 <span className="text-purple">Services</span>
