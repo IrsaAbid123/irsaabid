@@ -2,48 +2,66 @@ import Image from "next/image";
 
 export const content = [
     {
-        title: "Collaborative Editing",
+        title: "Full Stack Development",
         description:
-            "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
-        content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-                Collaborative Editing
-            </div>
-        ),
-    },
-    {
-        title: "Real time changes",
-        description:
-            "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+            "I specialize in designing and building scalable web and mobile applications using modern technologies like React.js, Next.js, React Native, and Node.js. From crafting responsive user interfaces to developing robust backends, I ensure high performance, maintainability, and a seamless user experience. My expertise in full-stack development enables me to create applications that are both dynamic and efficient.",
         content: (
             <div className="h-full w-full  flex items-center justify-center text-white">
                 <Image
-                    src="/linear.webp"
+                    src="/services/full2.jpg"
                     width={300}
                     height={300}
                     className="h-full w-full object-cover"
-                    alt="linear board demo"
+                    alt="Full Stack Development"
                 />
             </div>
         ),
     },
     {
-        title: "Version control",
+        title: "API Development & Integration",
         description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+            "Building secure, efficient, and scalable RESTful APIs using Node.js, NestJS, and Express.js. Whether it’s integrating third-party services, implementing Firebase Authentication, or setting up WebSockets for real-time communication, I ensure smooth and reliable data exchange between systems. My API solutions are optimized for high performance, scalability, and security.",
         content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-                Version control
+            <div className="h-full w-full  flex items-center justify-center text-white">
+                <Image
+                    src="/services/api.webp"
+                    width={300}
+                    height={300}
+                    className="h-full w-full object-cover"
+                    alt="API Integration"
+                />
             </div>
         ),
     },
     {
-        title: "Running out of content",
+        title: "Database Management",
         description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+            "Managing and optimizing databases for high availability and performance. I work extensively with MongoDB, Mongoose, and MySQL, focusing on efficient schema design, query optimization, and secure data storage. Whether it’s handling complex relationships or ensuring data integrity, I make sure your application has a well-structured and reliable database solution.",
         content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-                Running out of content
+            <div className="h-full w-full  flex items-center justify-center text-white">
+                <Image
+                    src="/services/data1.webp"
+                    width={300}
+                    height={300}
+                    className="h-full w-full object-cover"
+                    alt="Database Management"
+                />
+            </div>
+        ),
+    },
+    {
+        title: "Cloud & Deployments",
+        description:
+            "Ensuring smooth deployment and scalability using AWS, Firebase, and Vercel. I specialize in setting up CI/CD pipelines for automated deployments, optimizing cloud infrastructure, and managing serverless solutions. From hosting to performance monitoring, I make sure your applications are deployed efficiently with minimal downtime and maximum reliability.",
+        content: (
+            <div className="h-full w-full  flex items-center justify-center text-white">
+                <Image
+                    src="/services/cloud1.jpg"
+                    width={300}
+                    height={300}
+                    className="h-full w-full object-cover"
+                    alt="Cloud Deployments"
+                />
             </div>
         ),
     },
