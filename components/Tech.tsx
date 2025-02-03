@@ -10,7 +10,11 @@ export function TechGrid() {
             <h1 className="heading text-center my-20">
                 Tech <span className="text-purple">Stacks</span>
             </h1>
-            <div className="bg-gradient-to-br from-neutral-900 to-neutral-950 p-8">
+            <div className="bg-gradient-to-br  from-neutral-900 to-neutral-950 p-8 rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-md shadow-gray-600  "
+                style={{
+                    background: "rgb(4,7,29)",
+                    backgroundImage: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+                }}>
                 <div className="mx-auto max-w-7xl">
                     <div className="grid grid-cols-3 gap-10 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3">
                         {techIcons.map((tech) => {
@@ -19,7 +23,7 @@ export function TechGrid() {
                                     key={tech.id}
                                     whileHover={{ scale: 1.1, rotate: 2 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className={`group relative rounded-lg ${tech.color} px-4 py-8 hover:shadow-lg transition-all duration-200 ease-in-out ${tech.glowColor}`}
+                                    className={`group relative rounded-lg ${tech.color} px-4 py-8 rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200  shadow-md shadow-gray-600  ease-in-out  ${tech.glowColor}`}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-2">
                                         <Image src={tech.icon} alt="icon" width={60} height={60} />
