@@ -42,6 +42,15 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 <p className="text-neutral-700 dark:text-neutral-300 text-lg ">
                     Started as a <strong className="text-purple">React Native intern</strong>, refining my mobile development skills before advancing to full-stack development with <strong className="text-purple">React Native</strong>, <strong className="text-purple">React</strong>, <strong className="text-purple">Node.js</strong>, and scalable backend solutions. Now, as a <strong className="text-purple">Next.js Full Stack Developer</strong> at AirTective, I build high-performance web applications.
                 </p>
+                <div className="flex flex-row gap-10 pt-10">
+
+                    <p className="text-neutral-700 dark:text-neutral-300 text-xl ">
+                        <strong className="text-5xl text-white">1</strong> year of experience
+                    </p>
+                    <p className="text-neutral-700 dark:text-neutral-300 text-xl ">
+                        <strong className="text-5xl text-white">15</strong> Projects I've wored on
+                    </p>
+                </div>
 
             </div>
 
