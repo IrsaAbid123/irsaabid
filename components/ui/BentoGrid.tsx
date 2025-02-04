@@ -68,7 +68,7 @@ export const BentoGridItem = ({
                         <div className="absolute inset-0 bg-purple opacity-15 blur-2xl rounded-full"></div>
                         <div className="relative z-10">
                             <Image
-                                src={img || "/placeholder.svg"}
+                                src={"/pfp.png"}
                                 alt={title?.toString() || "Grid item"}
                                 width={200}
                                 height={200}
