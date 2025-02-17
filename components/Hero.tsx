@@ -1,15 +1,24 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './MagicButton'
 import { FaDownload, FaLocationArrow } from "react-icons/fa6";
-import YourImage from './path/to/your/image.jpg'  // Add your image path
+import YourImage from './path/to/your/image.jpg'
 import Image from 'next/image';
 import { BsDownload } from 'react-icons/bs';
 import { FcStart } from 'react-icons/fc';
 import { SiStartrek } from 'react-icons/si';
+import ReactPlayer from 'react-player'
+import { IoMdClose } from "react-icons/io"
 
 const Hero = () => {
+    const [showVideo, setShowVideo] = useState(false);
+
+    const openVideo = (e: any) => {
+        e.preventDefault();
+        setShowVideo(true);
+    };
     return (
         <div className='pb-20 pt-36'>
             <div>
@@ -44,7 +53,7 @@ const Hero = () => {
                             Specializing in building scalable web and mobile applications, exploring DevOps and AWS to enhance deployment efficiency.
                         </p>
                         <div className='flex flex-row gap-5'>
-                            <a href="/irsa-abid-full-stack.pdf" download>
+                            <a href="/myPortfolio/irsa-abid-full-stack.pdf" download="/myPortfolio/irsa-abid-full-stack.pdf">
                                 <MagicButton
                                     title="Download CV"
                                     icon={<BsDownload />}
@@ -52,9 +61,9 @@ const Hero = () => {
                                 />
                             </a>
 
-                            <a href="#about">
+                            <a href="#" onClick={openVideo}>
                                 <MagicButton
-                                    title="Vedio Intro"
+                                    title="Video Intro"
                                     icon={<FcStart />}
                                     position="right"
                                 />
@@ -74,6 +83,33 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+            {showVideo && (
+                <div className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center">
+                    <div className="relative w-[50%] h-[50%]">
+                        <button
+                            onClick={() => setShowVideo(false)}
+                            className="absolute -top-10 right-0 text-white text-3xl hover:text-gray-300"
+                        >
+                            <IoMdClose />
+                        </button>
+                        <ReactPlayer
+                            url="https://res.cloudinary.com/doicn3tpk/video/upload/v1739824895/portfolio_bjjo3f.mp4"
+                            width="100%"
+                            height="100%"
+                            controls
+                            playing
+                            config={{
+                                file: {
+                                    attributes: {
+                                        controlsList: 'nodownload nofullscreen', // Disable download and fullscreen options
+                                        disablePictureInPicture: true // Disable PiP button
+                                    }
+                                }
+                            }}
+                        />
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
