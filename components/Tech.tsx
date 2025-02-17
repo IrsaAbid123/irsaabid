@@ -15,7 +15,8 @@ export function TechGrid() {
                     backgroundImage: "url('/bg-tech.jpg')", // Replace with your image path
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                }}>
+                }}
+            >
                 <div className="absolute inset-0 backdrop-blur-lg bg-black/40 rounded-3xl"></div>
                 <div className="mx-auto max-w-7xl">
                     <div className="grid grid-cols-4 gap-10 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5">
@@ -29,9 +30,9 @@ export function TechGrid() {
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-2">
                                         <Image src={tech.icon} alt="icon" width={60} height={60} />
-                                        {/* <span className={`text-sm font-medium ${tech.textColor}`}>
+                                        <span className={`text-md font-medium ${tech.textColor}`}>
                                             {tech.title}
-                                        </span> */}
+                                        </span>
                                     </div>
                                     <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-transparent to-black/10" />
                                 </motion.div>

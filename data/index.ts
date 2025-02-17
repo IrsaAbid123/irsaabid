@@ -306,6 +306,14 @@ export const techIcons = [
   },
   {
     id: 11,
+    title: "Nest Js",
+    icon: "tech/nestjs.svg",
+    color: "bg-green-500/10",
+    glowColor: "group-hover:shadow-blue-500/50",
+    textColor: "text-red-400",
+  },
+  {
+    id: 12,
     title: "MongoDB",
     icon: "/tech/mongodb.png",
     color: "bg-green-500/10",
@@ -313,7 +321,7 @@ export const techIcons = [
     textColor: "text-green-500",
   },
   {
-    id: 12,
+    id: 13,
     title: "Firebase",
     icon: "/tech/firebase.png",
     color: "bg-yellow-400/10",
@@ -321,7 +329,7 @@ export const techIcons = [
     textColor: "text-yellow-400",
   },
   {
-    id: 13,
+    id: 14,
     title: "AWS",
     icon: "/tech/aws.png",
     color: "bg-yellow-600/10",
